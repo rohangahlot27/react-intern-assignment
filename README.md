@@ -46,14 +46,16 @@ assignment/
 ├── vite.config.ts
 ├── README.md
 
-🧪 Example Data
+## 🧪 Example Data
 
+```ts
 [
   { name: "John Doe", email: "john@example.com", status: "Active" },
   { name: "Jane Smith", email: "jane@example.com", status: "Inactive" }
 ]
 
-🧠 Learnings
+
+##🧠 Learnings
 Practical usage of react-table for dynamic UIs
 
 Controlled inputs for inline editing
@@ -62,7 +64,7 @@ Efficient filtering and conditional rendering in React
 
 Clean and responsive UI with Tailwind CSS
 
-👤 Author
+##👤 Author
 Rohan Gahlot
 GitHub: @rohangahlot27
 Deployed: react-intern-assignment-nine.vercel.app
