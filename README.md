@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# React Intern Assignment - Spreadsheet Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React 18 + TypeScript assignment that mimics a spreadsheet-like table UI. It allows editing, row filtering, sorting, and adding new rows — styled with Tailwind CSS and powered by `react-table`.
 
-Currently, two official plugins are available:
+## 📦 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React 18
+- 🛠️ TypeScript (Strict Mode)
+- 💨 Tailwind CSS
+- 📊 react-table
+- 📝 Editable inputs and tab-based filtering
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ View and sort tabular data
+- ✏️ Edit individual cells inline
+- 🔍 Filter rows based on **Active** or **Inactive** status via tabs
+- ➕ Add new rows dynamically
+- ⚡ Fast rendering with memoization and `react-table`
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
+```txt
+assignment/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── Tabs.tsx
+│   │   ├── Toolbar.tsx
+│   │   └── Spreadsheet.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   └── vite-env.d.ts
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── README.md
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧪 Example Data
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```ts
+[
+  { name: "John Doe", email: "john@example.com", status: "Active" },
+  { name: "Jane Smith", email: "jane@example.com", status: "Inactive" }
+]
+🧠 Learnings
+Practical usage of react-table for dynamic UIs
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Controlled inputs for inline editing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Efficient filtering and conditional rendering in React
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Clean and responsive UI with Tailwind CSS
+
+👤 Author
+Rohan Gahlot
+
+
