@@ -46,13 +46,13 @@ assignment/
 ├── vite.config.ts
 ├── README.md
 
-## 🧪 Example Data
+🧪 Example Data
 
-```ts
 [
   { name: "John Doe", email: "john@example.com", status: "Active" },
   { name: "Jane Smith", email: "jane@example.com", status: "Inactive" }
 ]
+
 🧠 Learnings
 Practical usage of react-table for dynamic UIs
 
@@ -64,5 +64,6 @@ Clean and responsive UI with Tailwind CSS
 
 👤 Author
 Rohan Gahlot
-
+GitHub: @rohangahlot27
+Deployed: react-intern-assignment-nine.vercel.app
 
