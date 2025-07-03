@@ -2,23 +2,28 @@
 
 A React 18 + TypeScript assignment that mimics a spreadsheet-like table UI. It allows editing, row filtering, sorting, and adding new rows — styled with Tailwind CSS and powered by `react-table`.
 
+## 🔗 Live Demo
+
+👉 [View Project](https://react-intern-assignment-nine.vercel.app)
+
 ## 📦 Tech Stack
 
-- ⚛️ React 18
-- 🛠️ TypeScript (Strict Mode)
-- 💨 Tailwind CSS
-- 📊 react-table
-- 📝 Editable inputs and tab-based filtering
+- ⚛️ React 18  
+- 🛠️ TypeScript (Strict Mode)  
+- 💨 Tailwind CSS  
+- 📊 react-table  
+- 📝 Editable inputs and tab-based filtering  
 
 ## 🚀 Features
 
-- ✅ View and sort tabular data
-- ✏️ Edit individual cells inline
-- 🔍 Filter rows based on **Active** or **Inactive** status via tabs
-- ➕ Add new rows dynamically
-- ⚡ Fast rendering with memoization and `react-table`
+- ✅ View and sort tabular data  
+- ✏️ Edit individual cells inline  
+- 🔍 Filter rows based on **Active** or **Inactive** status via tabs  
+- ➕ Add new rows dynamically  
+- ⚡ Fast rendering with memoization and `react-table`  
 
 ## 📁 Project Structure
+
 ```txt
 assignment/
 ├── public/
@@ -45,6 +50,7 @@ assignment/
 ├── tsconfig.node.json
 ├── vite.config.ts
 ├── README.md
+
 
 ## 🧪 Example Data
 
